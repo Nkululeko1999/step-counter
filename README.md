@@ -1,70 +1,131 @@
-# Getting Started with Create React App
+# Step Counter
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A simple React application that demonstrates basic state management by allowing users to increment, decrement, and reset a counter.
+
+## Features
+
+- Increment the counter
+- Decrement the counter
+- Reset the counter
+- Simple and responsive interface
+- Uses React state management with the `useState` hook
+
+## Technologies
+
+- React
+- JavaScript
+- HTML
+- CSS
+- Create React App (CRA)
+
+## Getting Started
+
+### Prerequisites
+
+Make sure you have Node.js and npm installed.
+
+Check your installed versions:
+
+```bash
+node --version
+npm --version
+```
+
+### Installation
+
+Clone the repository:
+
+```bash
+git clone <repository-url>
+```
+
+Navigate to the project directory:
+
+```bash
+cd step-counter
+```
+
+Install the dependencies:
+
+```bash
+npm install
+```
+
+### Run the Application
+
+Start the development server:
+
+```bash
+npm start
+```
+
+The application will run at:
+
+```text
+http://localhost:3000
+```
+
+## Usage
+
+The application displays a counter with controls for changing its value.
+
+- Click **Increment** to increase the counter by `1`.
+- Click **Decrement** to decrease the counter by `1`.
+- Click **Reset** to return the counter to `0`.
+
+## Example
+
+```text
+        Step Counter
+
+             0
+
+[ Decrement ] [ Reset ] [ Increment ]
+```
+
+## React Concepts Practiced
+
+This project is useful for practicing:
+
+- Functional components
+- React `useState` hook
+- Event handling
+- State updates
+- JSX
+- Component styling
+- Basic React project structure
 
 ## Available Scripts
 
-In the project directory, you can run:
-
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Runs the application in development mode.
 
 ### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Launches the test runner.
 
 ### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Builds the application for production.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Project Structure
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```text
+step-counter/
+├── public/
+├── src/
+│   ├── components/
+│   ├── App.js
+│   ├── App.css
+│   ├── index.js
+│   └── index.css
+├── package.json
+└── README.md
+```
 
-### `npm run eject`
+## Purpose
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Step Counter is a beginner React project created to practice state management and user interactions.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+The main focus of the project is understanding how React updates the user interface when application state changes.
