@@ -3,27 +3,23 @@ import { useState } from "react";
 function App() {
 
   const [count, setCount] = useState(0);
-  // const [message, setMessage] = useState("");
 
   function incrementValue(){
     setCount(count + 1)
   }
 
   function decrementValue(){
-    setCount(count - 1)
+    if (count > 0) {
+      setCount(count - 1)
+    }
   }
 
-  // function handleMessage(){
-
-  // }
-
-  console.log(count);
   return (
     <div className="App">
       <div className="container">
         <h1>{count}</h1>
         <p className="message"></p>
-        <button onClick={decrementValue} className="decrement-btn">-</button>
+        <button onClick={decrementValue} disabled={count === 0} className={`decrement-btn ${count === 0 ? 'disabled' : ''}`}>-</button>
         <button onClick={incrementValue} className="increment-btn">+</button>
       </div>
     </div>

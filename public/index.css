@@ -53,3 +53,8 @@ div > * {
 .decrement-btn {
   margin-right: 15px;
 }
+
+.disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
