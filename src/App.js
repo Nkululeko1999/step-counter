@@ -1,26 +1,17 @@
-import { useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { decrement, increment } from "./store/counter";
 
 function App() {
-
-  const [count, setCount] = useState(0);
-
-  function incrementValue(){
-    setCount(count + 1)
-  }
-
-  function decrementValue(){
-    if (count > 0) {
-      setCount(count - 1)
-    }
-  }
-
+  const { count } = useSelector((state) => state.counter);
+  const dispatch = useDispatch();
+  
   return (
     <div className="App">
       <div className="container">
         <h1>{count}</h1>
         <p className="message"></p>
-        <button onClick={decrementValue} disabled={count === 0} className={`decrement-btn ${count === 0 ? 'disabled' : ''}`}>-</button>
-        <button onClick={incrementValue} className="increment-btn">+</button>
+        <button onClick={() => dispatch(decrement())} disabled={count === 0} className={`decrement-btn ${count === 0 ? 'disabled' : ''}`}>-</button>
+        <button onClick={() => dispatch(increment())} className="increment-btn">+</button>
       </div>
     </div>
   );
